@@ -68,4 +68,13 @@
 <script src="index.js"></script>
 
 </body>
+  <audio id="bg-audio" loop>
+  <source src="audio-fondo.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.body.addEventListener("click", function () {
+  document.getElementById("bg-audio").play();
+}, { once: true });
+</script>
 </html>
